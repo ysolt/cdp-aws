@@ -4,6 +4,27 @@
     {
       "Effect": "Allow",
       "Principal": {
+        "AWS": "arn:aws:iam::392479084068:root"
+      },
+      "Action": "sts:AssumeRole"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::706388717391:root"
+      },
+      "Action": "sts:AssumeRole"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::463114675373:root"
+      },
+      "Action": "sts:AssumeRole"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
         "AWS": [
           "arn:aws:iam::387553343826:root"
         ]
