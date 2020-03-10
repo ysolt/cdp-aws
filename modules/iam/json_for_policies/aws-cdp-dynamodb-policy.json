@@ -27,7 +27,9 @@
           "dynamodb:TagResource",
           "dynamodb:UntagResource"
         ],
-        "Resource": "arn:aws:dynamodb:*:*:table/${DYNAMODB_TABLE_NAME}"
+        "Resource":  [
+          "arn:aws:dynamodb:*:*:table/${DYNAMODB_TABLE_NAME}",
+          "arn:aws:dynamodb:*:*:table/*"]
       }
     ]
   }
