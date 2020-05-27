@@ -11,6 +11,17 @@
       ]
     },
     {
+      "Sid": "CloudWatchMetric",
+      "Action": [
+        "cloudwatch:PutMetricAlarm",
+        "cloudwatch:DeleteAlarms"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "*"
+      ]
+    },
+    {
       "Sid": "DynamoDBFull",
       "Action": [
         "dynamodb:*"
@@ -206,6 +217,16 @@
       "Sid": "AutoScalingFull",
       "Action": [
         "autoscaling:*"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "ServiceQuotas",
+      "Action": [
+        "servicequotas:ListServiceQuotas"
       ],
       "Effect": "Allow",
       "Resource": [
